@@ -2,6 +2,6 @@
 
 int main() {
     char buf[5];
-    strcpy(buf, "overflow");
+    strcpy(buf, "Hello World!");
     return 0;
 }
