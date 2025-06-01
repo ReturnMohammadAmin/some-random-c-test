@@ -7,9 +7,9 @@ void fill(char *p, int n) {
 }
 
 int main() {
-    char *buf = (char *)malloc(16);
-    int n;
-    scanf("%d", &n);
+    int n, m;
+    scanf("%d%d", &n, &m);
+    char *buf = (char *)malloc(m);
     fill(buf, n);
     free(buf);
     return 0;
