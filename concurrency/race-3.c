@@ -1,5 +1,6 @@
 #include <pthread.h>
 #include <stdio.h>
+#include <assert.h>
 
 int a = 0, b = 0;
 
