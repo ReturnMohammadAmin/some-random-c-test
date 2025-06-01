@@ -4,12 +4,14 @@
 int x = 0;
 
 void* thread1(void* arg) {
-    x = 1;
+    for (int i = 0; i < 1e4; i++)
+        x += 1;
     return NULL;
 }
 
 void* thread2(void* arg) {
-    x = 2;
+    for (int i = 0; i < 1e4; i++)
+        x += 2;
     return NULL;
 }
 

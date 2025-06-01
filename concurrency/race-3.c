@@ -5,8 +5,9 @@
 int a = 0, b = 0;
 
 void* thread1(void* arg) {
-    a = 1;
     b = 1;
+    for (int i = 0; i < rand() % 10000; i++);
+    a = 1;
     return NULL;
 }
 
