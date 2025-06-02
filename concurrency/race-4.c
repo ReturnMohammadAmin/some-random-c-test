@@ -19,6 +19,8 @@ void* thread2(void* arg) {
 
 int main() {
     struct Data* shared = malloc(sizeof(struct Data));
+    if (!shared)
+        return 0;
     pthread_t t1, t2;
     pthread_create(&t1, NULL, thread1, shared);
     pthread_create(&t2, NULL, thread2, shared);
